@@ -1,112 +1,106 @@
-Python Weather Application
-Overview
+# Python Weather Application
 
-The Python Weather Application is a lightweight project that retrieves real-time weather information using a public weather API and displays key weather parameters in a simple and user-friendly format. The application helps users quickly check weather conditions such as temperature, humidity, wind speed, and general climate status for any location.
+## Overview
+The Python Weather Application is a simple project that retrieves real-time weather information using a public weather API. It allows users to check weather conditions such as temperature, humidity, wind speed, and overall weather description for any city. The application demonstrates how Python can interact with external APIs, process JSON data, and display useful information in a clear format.
 
-This project demonstrates how Python can be used to interact with external APIs, process JSON responses, and present useful data in a structured manner.
+## Features
+- Fetch real-time weather data using a weather API
+- Display temperature, humidity, wind speed, and weather condition
+- Search weather by city name
+- Simple command-line interface
+- Efficient handling of API responses and errors
 
-Features
+## Tech Stack
+- Python
+- Requests Library
+- OpenWeatherMap API (or any weather API)
+- JSON Data Handling
 
-Fetches real-time weather data from a weather API
+## Project Workflow
+1. The user enters the name of a city.
+2. The application sends an API request to the weather service.
+3. The weather API returns the data in JSON format.
+4. The program extracts important information such as temperature, humidity, wind speed, and weather description.
+5. The processed data is displayed in a readable format for the user.
 
-Displays temperature, humidity, wind speed, and weather conditions
+## Project Structure
+```
 
-Allows users to search weather by city name
-
-Simple and clean command-line interface
-
-Handles API responses and errors efficiently
-
-Tech Stack
-
-Python
-
-Requests Library
-
-Weather API (e.g., OpenWeatherMap)
-
-JSON Data Handling
-
-Project Workflow
-
-The user enters the city name.
-
-The application sends a request to the weather API.
-
-The API returns weather data in JSON format.
-
-The program extracts required parameters such as:
-
-Temperature
-
-Humidity
-
-Weather description
-
-Wind speed
-
-The processed data is displayed to the user in a readable format.
-
-Project Structure
 weather-app/
 │
-├── weather.py          # Main Python script
-├── requirements.txt    # Required dependencies
-├── README.md           # Project documentation
-└── config.py           # API key configuration (optional)
-Installation
-1. Clone the Repository
-git clone https://github.com/yourusername/python-weather-app.git
+├── weather.py
+├── requirements.txt
+├── README.md
+└── config.py
+
+```
+
+## Installation
+
+### 1. Clone the Repository
+```
+
+git clone [https://github.com/yourusername/python-weather-app.git](https://github.com/yourusername/python-weather-app.git)
 cd python-weather-app
-2. Install Dependencies
+
+```
+
+### 2. Install Required Libraries
+```
+
 pip install -r requirements.txt
-3. Get API Key
 
-Create a free account and obtain an API key from:
+```
 
+### 3. Get API Key
+Create an account and obtain a free API key from:
 https://openweathermap.org/api
 
-Configuration
+## Configuration
+Add your API key inside the Python script.
 
-Add your API key in the script:
+```
 
 API_KEY = "your_api_key_here"
-Running the Application
 
-Run the Python script:
+```
+
+## Running the Application
+Run the Python script using:
+
+```
 
 python weather.py
 
-Enter the city name when prompted to view weather details.
+```
 
-Example Output
+Enter the city name when prompted and the application will display the weather details.
+
+## Example Output
+```
+
 Enter city name: Hyderabad
 
-Weather in Hyderabad:
+Weather in Hyderabad
 Temperature: 30°C
 Humidity: 65%
 Wind Speed: 3.5 m/s
 Condition: Clear Sky
-Future Enhancements
 
-GUI using Tkinter or PyQt
+```
 
-Weather forecast for multiple days
+## Future Improvements
+- Add a graphical user interface using Tkinter or PyQt
+- Display multi-day weather forecasts
+- Add location-based automatic weather detection
+- Convert the application into a web or mobile app
 
-Location-based weather detection
+## Learning Outcomes
+- Understanding how to work with REST APIs
+- Parsing and handling JSON data
+- Using Python libraries for HTTP requests
+- Building real-world API-based applications
 
-Mobile or web interface
-
-Learning Outcomes
-
-Working with REST APIs
-
-Parsing JSON data
-
-Using Python libraries for HTTP requests
-
-Building real-world data-driven applications
-
-License
-
-This project is open-source and available under the MIT License.
+## License
+This project is open-source and available for learning and educational purposes.
+```
